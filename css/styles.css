@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../images/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+.tools {
+    width: 320px;
+    height: 200px;
+    padding: 2.5rem;
+    margin: 1rem;
+    border-radius: 12px;
+    border-top-right-radius: 80px;
+    background-color: var(--dark-blue);
+}
+.icons-bar {
+    margin-top: 2rem;
+}
+.icons-bar a {
+    padding: 1.4rem .7rem .9rem .8rem;
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+    background-color: var(--very-dark-blue);
+    border-radius: 12px; 
+}
+.storage {
+    width: 320px;
+    height: 155px;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: var(--dark-blue);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    
+}
+.storage-bar {
+    height: 22px;
+    padding: .2rem;
+    background-color: var(--very-dark-blue);
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+#storage-inner-bar {
+    height: 16px;
+    border-radius: 24px;
+    position: relative;
+}
+#storage-inner-bar:after {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    right: 0%;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.bar-spans {
+    display: flex;
+    justify-content: space-between;
+}
+.current-storage {
+    width: 174px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 1rem;
+    background-color: white;
+    color: var(--dark-blue);
+    border-radius: 12px;
+    transform: translate(25%, 22%);
+}
+.current-storage span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url('../images/bg-desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+        background-color: var(--very-dark-blue);
+    }
+   .main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   }
+   .storage {
+        width: 500px;
+        margin-bottom: 0;
+        text-align: left;
+   }
+   .current-storage {
+        transform: translate(140%, -250%);
+        position: relative;
+   }
+   .current-storage:after {
+        content: '';
+        position: absolute;
+        top: 85%;
+        right: 0%;
+        width: 0;
+        height: 0;
+        border-left: 28px solid transparent;
+        border-right: 0 solid transparent;
+        border-top: 30px solid white;
+   }
+}

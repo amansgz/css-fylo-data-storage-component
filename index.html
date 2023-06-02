@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- 400, 700 Font Raleway-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./scripts/main.js" defer></script>  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+<body>
+  <main class= "main-container">
+    <article class= "tools">
+      <img src= "./images/logo.svg" alt= "Fylo logo">
+      <div class= "icons-bar">
+        <a href="#">
+          <img 
+            src= "./images/icon-document.svg" 
+            alt= "document icon">
+        </a> 
+        <a href= "#">
+        <img 
+          src= "./images/icon-folder.svg" 
+          alt= "folder icon">
+        </a> 
+        <a href= "#">
+        <img 
+          src= "./images/icon-upload.svg" 
+          alt= "upload icon">
+        </a>  
+      </div>
+    </article>
+
+    <article class= "storage">
+      <p>
+        You’ve used 
+          <strong>815 GB</strong> 
+          of your storage
+      </p>
+      <div class= "storage-bar">
+        <div id= "storage-inner-bar"></div>
+      </div>
+
+      <div class= "bar-spans">
+        <span>0 GB</span>
+        <span>1000 GB</span>
+      </div>
+      <p class= "current-storage">
+        185<span>GB Left</span>
+      </p>
+    </article>
+  </main>
+
+</body>
+</html>
