@@ -22,7 +22,7 @@ Users should be able to:
 
 ## Live site solution
 
-[Live site]() hosted on GitHub Pages.
+[Live site](https://amansgz.github.io/css-fylo-data-storage-component/) hosted on GitHub Pages.
 
 ## Author
 
