@@ -1,11 +1,8 @@
-# 👩‍💻 Frontend Mentor - Fylo data storage component
+# 👩‍💻 Fylo data storage component
 
-Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-Join to [Frontend Mentor Discord community](https://discord.gg/UAfh3qzhYb)
 
-This is a solution for [Fylo Data Storage Component](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n) challenge.
 
-![Design preview for the Fylo data storage component challenge](./images/preview.png)
+
 
 ## The challenge
 
@@ -20,10 +17,18 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-## Live site solution
+<div>
+  <h3>
+    <a href= "https://amansgz.github.io/css-fylo-data-storage-component/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-[Live site](https://amansgz.github.io/css-fylo-data-storage-component/) hosted on GitHub Pages.
+![Design preview for the Fylo data storage component challenge](./images/preview.png)
 
-## Author
-
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
