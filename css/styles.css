@@ -1,67 +1,90 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 :root {
     --pale-blue: hsl(243, 100%, 93%);
     --grayish-blue: hsl(229, 7%, 55%);
     --dark-blue: hsl(228, 56%, 26%);
     --very-dark-blue: hsl(229, 57%, 11%);
+    --medium-dark-blue: hsl(229, 57%, 17%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    font-size: 62.5%;
 }
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
     background-image: url('../images/bg-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
 }
-.tools {
+main{
+    display: grid;
+    place-content: center;
+    height: 80vh;
+}
+figure,
+img {
+    display: block;
+}
+/************************************
+    PANEL
+/************************************/
+.panel {
     width: 320px;
-    height: 200px;
-    padding: 2.5rem;
+/*     height: 200px; */
+    padding: 5rem 4rem;
     margin: 1rem;
     border-radius: 12px;
     border-top-right-radius: 80px;
     background-color: var(--dark-blue);
 }
-.icons-bar {
-    margin-top: 2rem;
+.panel__icons {
+    margin-top: 4rem;
 }
-.icons-bar a {
-    padding: 1.4rem .7rem .9rem .8rem;
-    margin-top: 1.5rem;
-    margin-right: .5rem;
+.panel__icons a {
+    padding: 2rem 1rem 1rem 1.4rem;
+    margin-right: 1.5rem;
     background-color: var(--very-dark-blue);
     border-radius: 12px; 
+    text-decoration: none;
 }
+/************************************
+    STOTAGE
+/************************************/
 .storage {
     width: 320px;
-    height: 155px;
-    padding: 2rem;
+    height: 180px;
+    padding: 4rem;
     margin: 1rem;
-    background-color: var(--dark-blue);
-    border-radius: 12px;
     text-align: center;
     color: white;
-    
+    background-color: var(--dark-blue);
+    border-radius: 12px;
 }
-.storage-bar {
+.storage__text {
+    font-size: 1.4rem;
+}
+.storage__bar {
     height: 22px;
     padding: .2rem;
-    background-color: var(--very-dark-blue);
+    margin: 2rem 0;
+    background-color: var(--medium-dark-blue);
     border-radius: 12px;
-    margin: 1rem 0;
 }
-#storage-inner-bar {
+.storage__inner__bar {
     height: 16px;
     border-radius: 24px;
     position: relative;
 }
-#storage-inner-bar:after {
+.storage__inner__bar:after {
     content: '';
     position: absolute;
     height: 15px;
@@ -69,32 +92,54 @@ body {
     right: 0%;
     border-radius: 50%;
     background-color: white;
-
 }
-.bar-spans {
+.storage__bar__amounts {
     display: flex;
     justify-content: space-between;
 }
-.current-storage {
-    width: 174px;
+.storage__bar__amounts span {
+    font-size: 1.2rem;
+}
+.storage__left {
+    width: 160px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: bolder;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: white;
     color: var(--dark-blue);
     border-radius: 12px;
-    transform: translate(25%, 22%);
+    transform: translate(25%, 25%);
 }
-.current-storage span {
-    font-size: 12px;
+.storage__left span {
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: var(--grayish-blue);
 }
-
-@media screen and (min-width: 768px) {
+/************************************
+    FOOTER
+/************************************/
+.footer {
+  margin-top: auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+.footer__attribution a {
+  text-decoration: none;
+  color: var(--grayish-blue);
+  transition: color .1s ease;
+}
+.footer__attribution a:hover,
+.footer__attribution a:focus-visible {
+  color: var(--pale-blue);
+}
+/************************************
+    MEDIA QUERIES - 768px
+/************************************/
+@media screen and (min-width: 1024px) {
     body {
         background-image: url('../images/bg-desktop.png');
         background-repeat: no-repeat;
@@ -102,7 +147,7 @@ body {
         background-position: bottom center;
         background-color: var(--very-dark-blue);
     }
-   .main-container {
+   .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -112,11 +157,11 @@ body {
         margin-bottom: 0;
         text-align: left;
    }
-   .current-storage {
+   .storage__left {
         transform: translate(140%, -250%);
         position: relative;
    }
-   .current-storage:after {
+   .storage__left:after {
         content: '';
         position: absolute;
         top: 85%;
