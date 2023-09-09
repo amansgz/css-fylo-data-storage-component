@@ -25,23 +25,21 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
 }
-.container {
-    display: grid;
-    place-content: center;
-    height: 90vh;
-}
 figure,
 img {
     display: block;
 }
+.container {
+    display: grid;
+    place-content: center;
+    height: 90vh;
+}    
 /************************************
     PANEL
 /************************************/
 .panel {
     width: 320px;
-/*     height: 200px; */
     padding: 5rem 4rem;
-    
     border-radius: 12px;
     border-top-right-radius: 80px;
     background-color: var(--dark-blue);
