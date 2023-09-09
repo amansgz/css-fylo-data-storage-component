@@ -1,10 +1,9 @@
 # 👩‍💻 Fylo data storage component
 
 
-
-
-
 ## The challenge
+
+The challenge is to build out this data storage component and get it looking as close to the design as possible.
 
 Users should be able to:
 
